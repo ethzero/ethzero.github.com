@@ -1,0 +1,23 @@
+.box {
+  border: 1px solid #c8c8c8;
+  background-color: #e6e6e6;
+  padding: 5px 10px;
+}
+BODY {
+  font-family: "Arial";
+}
+header {
+  color: #4d926f;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #c8c8c8;
+  background-color: #e6e6e6;
+  padding: 5px 10px;
+}
+h2 {
+  color: #4d926f;
+}
+ul {
+  background-color: #ff0000;
+}
