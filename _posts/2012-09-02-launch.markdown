@@ -1,0 +1,10 @@
+---
+layout: post
+title: Launch
+---
+
+Jekyll, Liquid, Markdown
+========================
+
+Experimenting with GitHub pages with [Jekyll](https://github.com/mojombo/jekyll/wiki/), [Liquid](https://github.com/shopify/liquid/wiki/) and brushed up on my [Markdown](http://daringfireball.net/projects/markdown/syntax)
+

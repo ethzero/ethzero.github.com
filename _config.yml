@@ -9,12 +9,9 @@ exclude:
 - README.md
 
 navigation:
-- text: What we do
-  url: /en/what-we-do/
-- text: Who we are
-  url: /en/who-we-are/
-- text: Projects
-  url: /en/projects/
-- text: Blog
-  url: /en/blog/
-  layout: post
+- title: link-a
+  url: /link-a
+  weight: 10
+- title: link-b
+  url: /link-b
+  weight: 9

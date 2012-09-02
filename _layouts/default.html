@@ -28,6 +28,14 @@
     <nav>
     <ul>
     {% for weight in (1..10) %}
+
+{% for navpages in navigation %}
+Title:  {{ navpages.title }}<br>
+URL:    {{ navpages.url }}<br>
+Weight: {{ navpages.weight }}<br>
+{% endfor %}
+<br>
+
       {% for sitepage in site.pages %}
 
         {% if sitepage.published == 'true' or sitepage.published == null %}
