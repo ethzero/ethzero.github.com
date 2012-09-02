@@ -114,6 +114,9 @@ header nav ul li a {
   padding: 0.5em;
   display: block;
 }
+header nav ul li a.current {
+  background-color: #F8F8F8;
+}
 header nav ul li:last-child {
   border-bottom: 1px solid #F0F0F0;
 }

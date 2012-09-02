@@ -25,19 +25,6 @@
     <p>tagline</p>
     <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
 
-
-<hr><hr>
-<pre>
-page.url: {{ page.url }}
-page.layout: {{ page.layout }}
-<hr>
-{% for sitepage in site.pages %}
-sitepage.url: {{ sitepage.url }}
-sitepage.title: {{ sitepage.title }}
-sitepage.layout: {{ sitepage.layout }}
-{% endfor %}
-</pre>
-
     <nav>
     <ul>
     {% for sitepage in site.pages %}
