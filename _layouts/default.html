@@ -31,15 +31,15 @@
       {% for sitepage in site.pages %}
 
 {% if sitepage.published == 'true' %}
-sitepage.published: true
+sitepage.published: true<br>
 {% endif %}
 {% if sitepage.published == empty %}
-sitepage.published: empty
+sitepage.published: empty<br>
 {% endif %}
 {% if sitepage.published == null %}
-sitepage.published: null
+sitepage.published: null<br>
 {% endif %}
-
+<br><br>
 
         {% if sitepage.published == 'true' or sitepage.published == empty %}
           {% if sitepage.weight %}
