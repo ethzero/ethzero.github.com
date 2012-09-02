@@ -7,7 +7,9 @@ title: ethzero.github.com
 
 <h3>Site</h3>
 <pre>
-{{ site.pages }}
+{% for page in site.pages %}
+<p><span>{{ page.date | date: "%B %e, %Y" }}</span> <a href="{{ page.url }}">{{ page.title }}</p>
+{% endfor %}
 </pre>
 
 <h2>News</h2>

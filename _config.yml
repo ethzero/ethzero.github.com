@@ -1,5 +1,6 @@
 # 
 name: ethzero.github.com
+markdown: rdiscount
 future: true
 
 
