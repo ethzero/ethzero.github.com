@@ -29,9 +29,8 @@
 <nav>
 <ul>
 {% for page in site.pages %}
-<li>{{ page }} = {{ page.date | date: "%B %e, %Y" }} <a href="{{ page.url }}">{{ page.title }}</li>
+<li><a href="{{ page.url }}">{{ page.title }}</li>
 {% endfor %}
-
 </ul>
 </nav>
 
