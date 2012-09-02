@@ -26,10 +26,7 @@
     <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
 
 <hr>
-{% assign meganav = site.navigation | join: ', ' %}
-={{ site.navigation | join: ', ' }}=
-<br>
-{% for navpages in meganav %}
+{% for navpages in site.navigation %}
 Title:  {{ navpages.title }}<br>
 URL:    {{ navpages.url }}<br>
 Weight: {{ navpages.weight }}<br>
@@ -39,7 +36,7 @@ Weight: {{ navpages.weight }}<br>
     <nav>
     <ul>
     {% for weight in (1..10) %}
-      {% for sitepage in site.pages %}
+      {% for sitepage in site.pages,site.pages %}
 
         {% if sitepage.published == 'true' or sitepage.published == null %}
           {% if sitepage.weight %}
