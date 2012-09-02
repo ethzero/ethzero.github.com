@@ -29,7 +29,14 @@
     <ul>
     {% for weight in (1..10) %}
       {% for sitepage in site.pages %}
-        {% if sitepage.weight == weight %}
+
+{% if sitepage.weight %}
+  {% assign sitepageweight = sitepage.weight %}
+{% else %}
+  {% assign sitepageweight = 10 %}
+{% endif %}
+
+        {% if sitepageweight == weight %}
           {% assign current = nil %}
           {% if page.url == sitepage.url %}
             {% assign current = 'current' %}
