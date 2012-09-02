@@ -108,7 +108,7 @@ header nav ul {
 }
 header nav ul li {
   border-bottom: 1px solid #F0F0F0;
-  line-height: 2.5em;
+  /*line-height: 2.5em;*/
 }
 header nav ul li:last-child {
   border-bottom: 1px solid #F0F0F0;
