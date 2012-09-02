@@ -25,17 +25,17 @@
     <p>tagline</p>
     <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
 
-    <nav>
-    <ul>
-    {% for weight in (1..10) %}
-
+<hr>
 {% for navpages in navigation %}
 Title:  {{ navpages.title }}<br>
 URL:    {{ navpages.url }}<br>
 Weight: {{ navpages.weight }}<br>
 {% endfor %}
-<br>
+<hr>
 
+    <nav>
+    <ul>
+    {% for weight in (1..10) %}
       {% for sitepage in site.pages %}
 
         {% if sitepage.published == 'true' or sitepage.published == null %}
