@@ -30,6 +30,7 @@
     {% for weight in (1..10) %}
       {% for sitepage in site.pages %}
 
+sitepage.published = {{ sitepage.published }}<br>
 {% if sitepage.published == 'true' %}
 sitepage.published: true<br>
 {% endif %}
