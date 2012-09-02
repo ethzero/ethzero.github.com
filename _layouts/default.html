@@ -27,7 +27,7 @@
 
 <hr>
 {% assign meganav = site.navigation | join: ', ' %}
-{{ meganav }}
+{{ site.navigation | join: ', ' }}
 <br>
 {% for navpages in meganav %}
 Title:  {{ navpages.title }}<br>
