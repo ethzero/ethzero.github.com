@@ -1,9 +1,14 @@
+{% if site.baseurl == null %}
+    {% assign linkhome = "/" %}
+    {% else %}
+    {% assign linkhome = site.baseurl %}
+  {% endif %}
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>{{ page.title }}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
 
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="/assets/css/pygment_trac.css">
@@ -16,7 +21,7 @@
 <body>
     <div class="wrapper">
     <header>
-      <h1>ethzero.github.com</h1>
+      <h1><a href="{{ linkhome }}">{{ site.name }}</a></h1>
       <p>tagline</p>
       <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
     </header>
@@ -41,8 +46,8 @@ $ git checkout gh-pages
 
     </section>
     <footer>
-<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small><br>
-Last generation: {{ site.time }}</p>
+<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a><br>
+Last generation: {{ site.time }}</small></p>
     </footer>
   </div>
 

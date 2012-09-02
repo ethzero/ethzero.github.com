@@ -1,1 +1,8 @@
+# 
+name: ethzero.github.com
 future: true
+
+
+exclude:
+- .gitignore
+- README.md
