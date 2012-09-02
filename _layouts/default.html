@@ -27,6 +27,17 @@
 
 
 <hr><hr>
+<pre>
+page.url: {{ page.url }}
+page.layout: {{ page.layout }}
+<hr>
+{% for sitepage in site.pages %}
+sitepage.url: {{ sitepage.url }}
+sitepage.text: {{ sitepage.text }}
+sitepage.layout: {{ sitepage.layout }}
+{% endfor %}
+</pre>
+
     <nav>
     <ul>
     {% for sitepage in site.pages %}
