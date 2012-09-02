@@ -111,7 +111,7 @@ header nav ul li {
   line-height: 2.5em;
 }
 header nav ul li:last-child {
-  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
 }
 
 header ul#download {
