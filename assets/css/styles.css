@@ -107,14 +107,15 @@ header nav ul {
   border-top: 1px solid #F0F0F0;
 }
 header nav ul li {
-  border-bottom: 1px solid #FAFAFA;
+  border-bottom: 1px solid #F0F0F0;
+  /*line-height: 2.5em;*/
 }
 header nav ul li a {
   padding: 0.5em;
   display: block;
 }
 header nav ul li a.current {
-  /*background-color: #F8F8F8;*/
+  background-color: #FAFAFA;
 }
 header nav ul li:last-child {
   border-bottom: 1px solid #F0F0F0;
