@@ -36,7 +36,7 @@ Weight: {{ navpages.weight }}<br>
     <nav>
     <ul>
     {% for weight in (1..10) %}
-      {% for sitepage in site.pages,site.pages %}
+      {% for sitepage in site.pages,site.navigation %}
 
         {% if sitepage.published == 'true' or sitepage.published == null %}
           {% if sitepage.weight %}
