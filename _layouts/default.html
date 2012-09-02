@@ -42,12 +42,12 @@ sitepage.layout: {{ sitepage.layout }}
     <ul>
     {% for sitepage in site.pages %}
       {% assign current = nil %}
-      {% if page.url == sitepage.url or page.layout == sitepage.layout %}
+      {% if page.url == sitepage.url %}
         {% assign current = 'current' %}
       {% endif %}
 
       <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-        <a class="{{ current }}" href="{{ sitepage.url }}">{{ sitepage.text }}</a>
+        <a class="{{ current }}" href="{{ sitepage.url }}">{{ sitepage.title }}</a>
       </li>
 
     {% endfor %}
