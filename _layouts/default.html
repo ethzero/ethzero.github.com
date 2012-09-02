@@ -25,6 +25,16 @@
       <p>tagline</p>
       <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
     </header>
+
+<nav>
+<ul>
+{% for page in site.pages %}
+<li>{{ page }} = {{ page.date | date: "%B %e, %Y" }} <a href="{{ page.url }}">{{ page.title }}</li>
+{% endfor %}
+
+</ul>
+</nav>
+
     <section>
 
 {{ content }}
