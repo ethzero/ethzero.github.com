@@ -30,14 +30,7 @@
     {% for weight in (1..10) %}
       {% for sitepage in site.pages %}
 
-{{ sitepage.title }}<br>
-sitepage.published = {{ sitepage.published }}<br>
-{% if sitepage.published == 'true' %}sitepage.published: true<br>{% endif %}
-{% if sitepage.published == empty %}sitepage.published: empty<br>{% endif %}
-{% if sitepage.published == null %}sitepage.published: null<br>{% endif %}
-<br><br>
-
-        {% if sitepage.published == 'true' or sitepage.published == empty %}
+        {% if sitepage.published == 'true' or sitepage.published == null %}
           {% if sitepage.weight %}
             {% assign sitepageweight = sitepage.weight %}
           {% else %}
