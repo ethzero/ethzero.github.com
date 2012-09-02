@@ -25,18 +25,18 @@
     <p>tagline</p>
     <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
 
+
+<hr><hr>
     <nav>
     <ul>
     {% for sitepage in site.pages %}
       {% assign current = nil %}
-      {% if page.url == link.url or page.layout == link.layout %}
-       {% assign current = 'current' %}
+      {% if page.url == sitepage.url or page.layout == sitepage.layout %}
+        {% assign current = 'current' %}
       {% endif %}
 
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-
       <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-        <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+        <a class="{{ current }}" href="{{ sitepage.url }}">{{ sitepage.text }}</a>
       </li>
 
     {% endfor %}
