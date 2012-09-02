@@ -25,10 +25,16 @@
     <p>tagline</p>
     <p class="view"><a href="https://github.com/ethzero">View My GitHub Profile</a></p>
 
+    <ul>
+      <li><a href="https://github.com/ethzero/">Download <strong>ZIP File</strong></a></li>
+      <li><a href="https://github.com/ethzero/">Download <strong>TAR Ball</strong></a></li>
+      <li><a href="https://github.com/ethzero/">Fork On <strong>GitHub</strong></a></li>
+    </ul>
+
     <nav>
     <ul>
     {% for page in site.pages %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      <li><a href="{{ page.url }}">{{ page.title }}</a><strong></strong></li>
     {% endfor %}
     </ul>
     </nav>
