@@ -8,10 +8,10 @@ exclude:
 - .gitignore
 - README.md
 
-navigation:
-- title: link-a
-  url: /link-a
-  weight: 10
-- title: link-b
-  url: /link-b
-  weight: 9
+#navigation:
+#- title: link-a
+#  url: /link-a
+#  weight: 10
+#- title: link-b
+#  url: /link-b
+#  weight: 9
